@@ -321,6 +321,10 @@ section p {
   margin: 0 auto;
 }
 
+.background h2{
+  color: var(--clr-accent);
+}
+
 .background img {
   max-width: 650px;
   margin-left: auto;
