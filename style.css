@@ -406,12 +406,27 @@ section p {
   margin: 0 auto;
 }
 
-.education-list{
+.list{
 
     margin: auto;
     max-width: 700px;
     list-style: number;
 }
+
+/* Personal Finance */
+
+.personal-finance {
+  background: var(--clr-accent);
+  color: var(--clr-light);
+}
+
+.personal-finance-div {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+
+/* Footer */
 
 footer{
     display: flex;
