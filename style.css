@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
 *,
 *::before,
 *::after {
@@ -6,15 +7,15 @@
 }
 
 :root {
-  --ff-primary: 'Caveat', cursive;
-  --ff-secondary: "Montserrat", sans-serif;
+  --ff-primary: 'DM Sans', sans-serif;
+  --ff-secondary: 'DM Serif Display', serif;
 
   --fw-reg: 300;
   --fw-bold: 700;
 
   --clr-light: #fff;
   --clr-dark: #303030;
-  --clr-accent: #431152;
+  --clr-accent: #00008B;
 
   --fs-h1: 3rem;
   --fs-h2: 2.25rem;
@@ -42,11 +43,11 @@ body {
   color: var(--clr-dark);
   margin: 0;
   font-family: var(--ff-primary);
-  font: var(--fs-body);
+  font-size: var(--fs-body);
   line-height: 1.6;
 }
 p{
-    font-family: var(--ff-secondary);
+    font-family: var(--ff-primary);
     
 }
 
@@ -64,6 +65,7 @@ h2,
 h3 {
   line-height: 1.1;
   margin: 0;
+  font-family: var(--ff-secondary);
 }
 
 h1 {
@@ -109,16 +111,18 @@ nav {
   display: flex;
   flex-direction: column;
 }
+
 .ligisa-txt {
-  font-family: "Dancing Script", cursive;
+  font-family: var(--ff-secondary);
   color: var(--clr-accent);
-  font-size: 1rem;
+  font-size: 1.7rem;
   font-weight: var(--fw-bold);
+  letter-spacing: .3em;
 }
 
 .youth-network-txt {
-  color: var(--clr-dark);
-  font-size: 1rem;
+  font-family: var(--ff-secondary);
+  font-size: 1.1rem;
 }
 
 /* hamburger */
@@ -126,8 +130,8 @@ nav {
 @media screen and (max-width: 600px) {
   .navbar-links {
     position: fixed;
-    background: var(--clr-dark);
-    color: var(--clr-light);
+    background: var(--clr-light);
+    color: var(--clr-accent);
     top: 0;
     bottom: 0;
     right: 0;
@@ -157,8 +161,12 @@ nav {
   }
 
   .nav__link:hover {
-    color: #694175;
+    color: var(--clr-accent);
+    transform: ease-in-out;
+    font-size: 2em;
+  
   }
+  
 
   .nav-toggle {
     padding: 0.25em;
@@ -196,7 +204,7 @@ nav {
   .hamburger,
   .hamburger::before,
   .hamburger::after {
-    background: #694175;
+    background: var(--clr-accent);
     width: 2em;
     height: 3px;
     border-radius: 1em;
@@ -242,13 +250,15 @@ nav {
   }
 
   .navbar-links li a {
-    color: #000000;
+    color: var(--clr-accent);
     text-decoration: none;
   }
 
   .navbar-links li:hover {
     text-decoration: underline;
-    color: var(--clr-accent);
+    font-size: 1.3em;
+    transform: 5s ease-in-out;
+    color: #00008B;
   }
 }
 
@@ -267,8 +277,18 @@ nav {
   justify-content: center;
 }
 
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+}
+
 .group-name {
   font-size: 3.2rem;
+  font-family: var(--ff-secondary);
+  letter-spacing: 10px;
+  padding: 15px;
 }
 
 .btn-learn-more {
@@ -321,10 +341,6 @@ section p {
   margin: 0 auto;
 }
 
-.background h2{
-  color: var(--clr-accent);
-}
-
 .background img {
   max-width: 650px;
   margin-left: auto;
@@ -344,11 +360,39 @@ section p {
   margin: 0 auto;
 }
 
-.health-list{
-    margin: auto;
-    max-width: 700px;
-    list-style: number;
+
+.health-flex{
+   margin: auto;
+   max-width: 700px;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+
 }
+
+.health-flex img{
+  width: 300px;
+  height: 200px;
+  
+}
+
+.health-flex p{
+  width: 300px;
+  
+}
+
+@media screen and (max-width: 768px) {
+  .health-flex img{
+    width: 100vw;
+    height: 250px
+  }
+  .health-flex p{
+    width: 100%;
+  }
+}
+  
+
 
 /* EDUCATION */
 
@@ -363,153 +407,49 @@ section p {
 }
 
 .education-list{
+
     margin: auto;
     max-width: 700px;
     list-style: number;
 }
 
-/* MENTORSHIP */
-.mentorship{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    
-}
-
-.card{
-    max-width: 450px;
-    min-width: 250px;
-    margin:  5px;
-}
-
-.mentorship-image{
-    border-top: 10px solid #431152;
-    border-left: 10px solid #431152;
-}
-
-.card img{
-    display: block;
-    margin: 1.5em auto;
-    max-width: 95%;  
-}
-
-.mentorship-content{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.brainstorm{
-    font-size: var(--fs-h3);
-    padding: 20px;
-    color: var(--clr-accent);
-    text-align: center;
-}
-
-.mentorship-list {
-    list-style-type: disc;
-}
-
-.mentorship-list-item{
-text-align: left;
-}
-
-.mentorship-types{
-    font-size: 1.6rem;
-    padding: 10px;
-    color: var(--clr-accent);
-    text-align: center;
-}
-
-
-/* MENTORSHIP TABLE */
-
-.mentorship-section{
-    background-color: var(--clr-accent);
-    color: var(--clr-light);
-
-}
-.mentorship-sessions{
-    max-width: 1000px;
-    margin: auto;
-}
-
-
-.wrapper{
-    width: min(900px, 100% -3rem);
-    margin-inline: auto;
-}
-
-
-table{
-    width: 100%;
-    border-collapse: collapse;
-    background-color: var(--clr-accent);
-    border: 2px solid var(--clr-light);   
-}
-
-caption,
-th,
-td{
-    padding: 1rem;
-    text-align: left;
-}
-
-caption{
-    background: hsl(0 0% 0%);
-    font-size: 1.5rem;
-    font-weight: 700;
-    text-transform: uppercase;
-}
-
-th{
-    background: hsl(0 0% 0% / 0.5);
-}
-
-tr:nth-of-type(2n){
-    background: hsl(0 0% 0% / .7);
-}
-
-.table-container{
-    max-width: 100%;
-    overflow-x: auto;
-}
-
 footer{
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: aliceblue;
+    font-size: var(--fs-body);
 }
 .address{
     display: flex;
+    flex-direction: column;
     text-align: center;
     justify-content: center;
     flex-wrap: wrap;
+    text-decoration: underline;
 }
-footer p
-{
-    padding: 20px;
-    font-size: 1rem;
-}
+
 footer span{
-    font-size: 1.2rem;
+    font-size: var(--fs-body);
     margin: 5px;
 }
 
 footer{
-    padding-top: 4em;
+    padding-top: 2em;
 }
+
 .social-icons{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 4em;
-}
-.social-icons img{
-    padding: 10px;
+    padding: 1em;
+    color: var(--clr-accent);
+    font-size: 3em;
 }
 
+.icons{
+   margin-left: 20px;
+}
 
 .copyright{
     background: var(--clr-dark);
@@ -520,28 +460,6 @@ footer{
 }
 
 /* ABOUT */
-
-.about{
-    background-color: var(--clr-accent);
-    color: white;
-    padding-bottom: 5em 2em;
-    border-bottom: 10px solid#694175;
-}
-
-
-.about-heading{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5px;
-    border-bottom: 3px solid #694175;
-   
-}
-
-.about-heading span{
-    margin: auto;
-    font-size: 1.6rem;
-}
 
 .about-wrapper{
     background-color: rgb(38, 74, 62);
@@ -561,30 +479,41 @@ footer{
     margin: auto;
 }
 
-.strategic-plan{
-    color: var(--clr-light);
-    max-width: 900px;
-    margin: auto;
-    padding-top: 2em;
-    padding-bottom: 2em;
-
-}
-.strategic-plan-parent{
-    background-color: rgb(235, 239, 239);
+.about{
+    background-color: var(--clr-accent);
+    color: white;
+    padding: 5em 1em;
 }
 
-.border{
-    border: 1px solid var(--clr-dark);
-    
+
+.about-heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    border-bottom: 3px solid #0000E7;
+   
 }
 
-.strategic-plan h2{
-    color: var(--clr-accent);
+.about-heading span{
+    font-size: 1.6rem;
+}
+
+.about-icon{
     font-size: 2.5rem;
-    text-align: center;
+    color: white;
 }
 
-.strategic-plan table td {
-  border: 1px solid white;
-  padding: 8px;
+.none{
+    display: none;
 }
+
+.about-heading p {
+  transition: 3s ease-in-out;
+}
+
+
+
+
+
+

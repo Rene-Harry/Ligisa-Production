@@ -14,53 +14,27 @@ navLinks.forEach((link) => {
 
 // About
 
-// Get all the about-heading elements
+// Get all the .about-heading elements
 const aboutHeadings = document.querySelectorAll('.about-heading');
 
-
-// Add click event listener to each about-heading element
+// Add event listener to each .about-heading element
 aboutHeadings.forEach((heading) => {
-  
-
-  const paragraph = heading.nextElementSibling;
-  const image = heading.querySelector('img');
-
-  // Hide the paragraph initially
-  paragraph.style.display = 'none';
-
-  // Add click event listener to the about-heading element
   heading.addEventListener('click', () => {
-    // Toggle the display of the paragraph when the about-heading is clicked
-    if (paragraph.style.display === 'none') {
-      
-      image.src = './images/up-arrow.png';
-      
+    // Get the sibling element (p or ul)
+    const content = heading.nextElementSibling;
 
-      paragraph.style.display = 'block';
-      paragraph.style.transition = 'opacity 2s ease in';
-      
-      image.style.opacity = '0';
-      image.style.transition = 'opacity 2s ease';
-      setTimeout(() => {
-        image.style.opacity = '1';
-      }, 0);
-    } else {
-      // Change the image source back to arrow-down.png
-      image.src = './images/arrow-down.png';
+    // Toggle the 'none' class
+    content.classList.toggle('none');
 
-      // Hide the paragraph with a smooth transition
-      paragraph.style.display = 'none';
-      paragraph.style.transition = 'opacity 2s ease';
-      
-      // Fade out the image with a smooth transition
-      image.style.opacity = '0';
-      image.style.transition = 'opacity 2s ease';
-      setTimeout(() => {
-        image.style.opacity = '1';
-      }, 0);
-    }
+    // Toggle the i element class for fa-angle-down and fa-angle-up
+    const icon = heading.querySelector('i');
+    icon.classList.toggle('fa-angle-down');
+    icon.classList.toggle('fa-angle-up');
   });
 });
+
+
+
 
 //Learn more Button
 
