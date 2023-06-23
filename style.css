@@ -397,8 +397,16 @@ section p {
 /* EDUCATION */
 
 .education {
-  background: var(--clr-light);
-  color: var(--clr-dark);
+  background-color: #646160;
+  color: var(--clr-light);
+
+
+  background-image: url(./images/education-desktop-2.jpg) ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: multiply;
+ 
+  
 }
 
 .education-div {
@@ -412,6 +420,14 @@ section p {
     max-width: 700px;
     list-style: number;
 }
+
+@media screen and (max-width: 400px) {
+  .education{
+    background-image: url(./images/education-mobile.jpg) ;
+    
+  }
+}
+  
 
 /* Personal Finance */
 
