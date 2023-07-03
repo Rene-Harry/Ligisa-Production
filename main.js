@@ -45,6 +45,15 @@ var button = document.querySelector('.btn-learn-more');
     window.location.href = 'about.html';
   });
 
+  //Getting involved button
+
+  var button = document.querySelector('.gettingInvolvedBtn');
+
+  button.addEventListener('click', function() {
+    // Navigate to the about.html file
+    window.location.href = 'contact.html';
+  });
+
 
 
 
