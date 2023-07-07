@@ -254,8 +254,6 @@ nav {
 
   .navbar-links li:hover {
     text-decoration: underline;
-    font-size: 1.3em;
-    transform: 5s ease-in-out;
     color: #00008b;
   }
 }
@@ -528,13 +526,10 @@ footer {
   display: flex;
   flex-direction: column;
   text-align: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  text-decoration: underline;
+  margin: 0 auto;
 }
 
-footer span {
-  font-size: var(--fs-body);
+footer p { 
   margin: 5px;
 }
 
@@ -545,14 +540,18 @@ footer {
 .social-icons {
   display: flex;
   justify-content: center;
-  align-items: center;
   padding: 1em;
   color: var(--clr-accent);
-  font-size: 3em;
+  font-size: 2em;
 }
 
 .icons {
-  margin-left: 20px;
+  margin-left: 10px;
+}
+
+.icons:hover {
+  color: green;
+  cursor: pointer;
 }
 
 .copyright {
@@ -687,6 +686,20 @@ footer {
   margin-bottom: 10px;
 }
 
+.alert {
+  display: none;
+}
+
+.alert p{
+  
+  margin-bottom: 5px;
+  width: 100%;
+  padding: 8px;
+  border-radius: 4px;
+  background-color: green;
+
+}
+
 .form-group label {
   display: block;
   margin-bottom: 5px;
@@ -748,7 +761,7 @@ footer {
   padding: 10px;
 }
 
-@media screen and (max-width: 410px) {
+@media screen and (max-width: 800px) {
   .contact-details {
     flex-direction: column-reverse;
     align-items: normal;

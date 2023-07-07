@@ -11,49 +11,41 @@ navLinks.forEach((link) => {
   });
 });
 
-
 // About
 
 // Get all the .about-heading elements
-const aboutHeadings = document.querySelectorAll('.about-heading');
+const aboutHeadings = document.querySelectorAll(".about-heading");
 
 // Add event listener to each .about-heading element
 aboutHeadings.forEach((heading) => {
-  heading.addEventListener('click', () => {
+  heading.addEventListener("click", () => {
     // Get the sibling element (p or ul)
     const content = heading.nextElementSibling;
 
     // Toggle the 'none' class
-    content.classList.toggle('none');
+    content.classList.toggle("none");
 
     // Toggle the i element class for fa-angle-down and fa-angle-up
-    const icon = heading.querySelector('i');
-    icon.classList.toggle('fa-angle-down');
-    icon.classList.toggle('fa-angle-up');
+    const icon = heading.querySelector("i");
+    icon.classList.toggle("fa-angle-down");
+    icon.classList.toggle("fa-angle-up");
   });
 });
 
-
-
-
 //Learn more Button
 
-var button = document.querySelector('.btn-learn-more');
+var learnMoreButton = document.querySelector(".btn-learn-more");
 
-  button.addEventListener('click', function() {
-    // Navigate to the about.html file
-    window.location.href = 'about.html';
-  });
+learnMoreButton.addEventListener("click", function () {
+  // Navigate to the about.html file
+  window.location.href = "about.html";
+});
 
-  //Getting involved button
+//Getting involved button
 
-  var button = document.querySelector('.gettingInvolvedBtn');
+var gettingInvolvedButton = document.querySelector(".gettingInvolvedBtn");
 
-  button.addEventListener('click', function() {
-    // Navigate to the about.html file
-    window.location.href = 'contact.html';
-  });
-
-
-
-
+gettingInvolvedButton.addEventListener("click", function () {
+  // Navigate to the about.html file
+  window.location.href = "contact.html";
+});
