@@ -772,3 +772,29 @@ footer {
   }
 }
 
+/*  MESSAGES */
+
+.messageContainer{
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.messageCard{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--clr-accent);
+  color: #fff;
+  padding: 10px;
+}
+
+.messageSender{
+  width: 30%;
+}
+
+.messageCard p{
+  margin: 0;
+}
+
+
+
