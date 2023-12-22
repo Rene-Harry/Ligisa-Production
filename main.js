@@ -34,7 +34,7 @@ aboutHeadings.forEach((heading) => {
 
 //Learn more Button
 
-var learnMoreButton = document.querySelector(".btn-learn-more");
+let learnMoreButton = document.querySelector(".btn-learn-more");
 
 learnMoreButton.addEventListener("click", function () {
   // Navigate to the about.html file
@@ -49,3 +49,5 @@ gettingInvolvedButton.addEventListener("click", function () {
   // Navigate to the about.html file
   window.location.href = "contact.html";
 });
+
+
