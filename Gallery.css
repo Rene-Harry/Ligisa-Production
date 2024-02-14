@@ -1,33 +1,29 @@
 .team-container {
   display: flex;
-  background-image: linear-gradient(to bottom, #080E3A, #313359,  #FFF);
+  background-image: linear-gradient(to bottom, #080e3a, #313359, #fff);
 
   color: #050a30;
-  
 }
 .teamimages {
   width: 40vw;
-  
+
   display: flex;
   justify-content: center;
   align-items: center;
-  
-  
 }
 
-.imagestar{
+.imagestar {
   display: flex;
-   max-width: 230px;
-   flex-wrap: wrap;
-   justify-content: center;
-  
+  max-width: 230px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .hexagon-container {
   width: 100px;
   height: 100px;
   position: relative;
-  margin-right: 15px; 
+  margin-right: 15px;
 }
 
 .hexagon {
@@ -45,21 +41,18 @@
   position: absolute;
   top: 0;
   left: 0;
-  
 }
 
-.team{
+.team {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 60vw;
   height: 90vh;
-  border-radius: 64% 0% 0% 0% / 75% 8% 10% 20% ;
-  background-color: #FFF;
+  border-radius: 64% 0% 0% 0% / 75% 8% 10% 20%;
+  background-color: #ffff;
 }
 
-.team h2{
+.team h2 {
   text-align: center;
 }
-
-
