@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script
+      src="https://kit.fontawesome.com/d747ff6920.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <div class="logo-image">
+            <img src="./images/logo_light.jpeg" alt="ligisa logo" />
+          </div>
+          <div class="logo-text">
+            <span class="ligisa-txt">Ligisa</span>
+            <span class="youth-network-txt">Youth Network</span>
+          </div>
+        </div>
+        <button class="nav-toggle" aria-label="toggle navigation">
+          <span class="hamburger"></span>
+        </button>
+
+        <div class="navbar-links">
+          <ul class="nav__list">
+            <li>
+              <a href="index.html" class="nav__link">Home</a>
+            </li>
+            <li>
+              <a href="about.html" class="nav__link">About</a>
+            </li>
+            <li>
+              <a href="clubs.html" class="nav__link">Clubs</a>
+            </li>
+            <li>
+              <a href="contact.html" class="nav__link current">Contact</a>
+            </li>
+            <li>
+              <a href="" class="nav__link">Gallery</a>
+            </li>
+            <li>
+              <a href="" class="nav__link">The team</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <section class="contact-us">
+      <div class="contact-us-div">
+        <div>
+          <h2>Contact Us</h2>
+          <p>Leave a message and we will reply as soon as possible</p>
+        </div>
+
+        <div class="contact-details">
+          <div>
+            <div class="contact-details-item">
+              <div>
+                <a href="tel:0717207202">
+                  <i class="fa-solid fa-phone contact-icons"></i>
+                  <span>0717207202</span></a
+                >
+              </div>
+              <div>
+                <i class="fa-sharp fa-solid fa-envelope contact-icons"></i>
+                <span>1234@gmail.com</span>
+              </div>
+              <div>
+                <i class="fa-sharp fa-solid fa-location-dot contact-icons"></i>
+                <span>Road | Street | Building</span>
+              </div>
+            </div>
+
+            <div class="contact-social-icons">
+              <i class="fa-brands fa-facebook icons contact-icons"></i>
+              <i class="fa-brands fa-instagram icons contact-icons"></i>
+              <i class="fa-brands fa-twitter icons contact-icons"></i>
+            </div>
+          </div>
+
+          <div>
+            <div class="contact-us-form-container">
+              <form id="contact-form" action="">
+                <div class="form-group">
+                  <label for="name">Name</label>
+                  <input type="text" id="name" name="name" required />
+                </div>
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" required />
+                </div>
+                <div class="form-group">
+                  <label for="subject">Subject</label>
+                  <input type="text" id="subject" name="subject" required />
+                </div>
+                <div class="form-group">
+                  <label for="message">Message</label>
+                  <textarea id="message" name="message" required></textarea>
+                </div>
+                <div class="alert">
+                  <p>Your message has been submitted</p>
+                </div>
+                <button type="submit" class="submit-button">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="./main.js"></script>
+    <script src="./footer.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="firebase.js"></script>
+  </body>
+</html>

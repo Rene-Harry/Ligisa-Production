@@ -49,5 +49,3 @@ gettingInvolvedButton.addEventListener("click", function () {
   // Navigate to the about.html file
   window.location.href = "contact.html";
 });
-
-

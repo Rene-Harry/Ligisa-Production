@@ -1,0 +1,49 @@
+.team-container {
+  display: flex;
+  /* justify-content: space-between; */
+
+  color: #050a30;
+  
+}
+.teamimages {
+  display: flex;
+  max-width: 230px;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: aqua;
+  
+}
+
+.hexagon-container {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  margin-right: 15px; 
+}
+
+.hexagon {
+  width: 100%;
+  padding-bottom: 115%; /* Controls the height of the hexagon */
+  position: absolute;
+  background-color: #3498db; /* Set your desired background color */
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  overflow: hidden;
+}
+
+.hexagon img {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  
+}
+
+.team{
+  height: 300px;
+  height: 300px;
+  border-radius: 100% 0% 0% 100% / 100% 0% 100% 0% ;
+  background-color: red;
+}
+
+
