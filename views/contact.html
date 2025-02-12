@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script
+      src="https://kit.fontawesome.com/d747ff6920.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <div class="logo-image">
+            <img src="/images/logo_light.jpeg" alt="ligisa logo" />
+          </div>
+          <div class="logo-text">
+            <span class="ligisa-txt">Ligisa</span>
+            <span class="youth-network-txt">Youth Network</span>
+          </div>
+        </div>
+        <button class="nav-toggle" aria-label="toggle navigation">
+          <span class="hamburger"></span>
+        </button>
+
+        <div class="navbar-links">
+          <ul class="nav__list">
+            <li>
+              <a href="index.html" class="nav__link">Home</a>
+            </li>
+            <li>
+              <a href="about.html" class="nav__link">About</a>
+            </li>
+            <li>
+              <a href="clubs.html" class="nav__link">Clubs</a>
+            </li>
+            <li>
+              <a href="contact.html" class="nav__link current">Contact</a>
+            </li>
+            <li>
+              <a href="gallery.html" class="nav__link">Gallery</a>
+            </li>
+            <li>
+              <a href="theTeam.html" class="nav__link">The team</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <section class="contact-us">
+      <div class="contact-us-div">
+        <div>
+          <h2>Contact Us</h2>
+          <p>Leave a message and we will reply as soon as possible</p>
+        </div>
+
+        <div class="contact-details">
+          <div>
+            <div class="contact-details-item">
+              <div>
+                <a href="tel:0729488387">
+                  <i class="fa-solid fa-phone contact-icons"></i>
+                  <span>0729488387</span></a
+                >
+              </div>
+              <div>
+                <i class="fa-sharp fa-solid fa-envelope contact-icons"></i>
+                <span>admin@ligisa.co.ke</span>
+              </div>
+              <div>
+                <i class="fa-sharp fa-solid fa-location-dot contact-icons"></i>
+                <span>Off | Mbita-Homabay Road | MADO</span>
+              </div>
+            </div>
+
+            <div class="contact-social-icons">
+              <a
+                href="https://web.facebook.com/profile.php?id=100080274066941"
+                target="_blank"
+                ><i class="fa-brands fa-facebook icons contact-icons"></i
+              ></a>
+              <i class="fa-brands fa-instagram icons contact-icons"></i>
+              <i class="fa-brands fa-twitter icons contact-icons"></i>
+            </div>
+          </div>
+
+          <div>
+            <div class="contact-us-form-container">
+              <form id="contact-form" action="">
+                <div class="form-group">
+                  <label for="name">Name</label>
+                  <input type="text" id="name" name="name" required />
+                </div>
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" required />
+                </div>
+                <div class="form-group">
+                  <label for="subject">Subject</label>
+                  <input type="text" id="subject" name="subject" required />
+                </div>
+                <div class="form-group">
+                  <label for="message">Message</label>
+                  <textarea id="message" name="message" required></textarea>
+                </div>
+                <div class="alert">
+                  <p>Your message has been submitted</p>
+                </div>
+                <button type="submit" class="submit-button">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d997.4256369183317!2d34.207619439566024!3d-0.43648080001467504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2ske!4v1739372497060!5m2!1sen!2ske"
+        width="100%"
+        height="300"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+    <script src="/main.js"></script>
+    <script src="/footer.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="/firebase.js"></script>
+  </body>
+</html>
